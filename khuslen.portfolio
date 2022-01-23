@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="wed.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Brand</a></li>
+           
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+            
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1 class="headings">BRAND</h1>
+        <div class="gallery">
+            <img src="zur1.png" alt="">
+            <img src="zur2.png" alt="">
+            <img src="zur3.png" alt="">
+            <img src="zur4.jpg" alt="">
+            <img src="zur5.jpg" alt="">
+            <img src="zur6.jpg" alt="">
+            <img src="zur7.jpg" alt="">
+            <img src="zur8.jpg" alt="">
+            
+        </div>
+    </section>
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</htm
+
+
+*{
+    margin:0;
+    padding:0;
+   
+}
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0, 0, 0, 0.5);
+    position:sticky;
+    top:0;
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family:century;
+    font-size:1.1 rem;
+    font-weight:bold;
+
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    padding:8px 25px;
+    
+}
+.navbar ul li a:hover{
+    background-color:white;
+    color:black;
+    box-shadow: 0 0 10px white;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(0, 0, 0, 0.5);
+    height:840px;
+    justify-content:center;
+    color:white;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    background:url('suuri10.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    height:900px;
+    width:100%;
+    z-index:-1;
+    opacity:.9;
+}
+#portfolio{
+    display:flex;
+    background-color:rgba(0, 0, 0, 0.8);
+    flex-direction:column;
+    color:white;
+    align-items:center;
+    padding:20px;
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    box-sizing:border-box;
+}
+.gallery img{
+  width:300px;
+  height:400px;
+  margin:10px;
+}
+
+footer{
+    position:relative;
+    width:100%;
+    background: #808080;
+    min-height:100px;
+    padding: 20px 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+footer .social_icon li, footer .menu {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 10px 0;
+    flex-wrap:wrap;
+}
+footer .social_icon li, footer .menu li{
+    list-style:none;
+}
+footer .social_icon li a, footer .menu li a{
+ font-size: 2em;
+ color:white;
+ margin: 0 10px;
+ display: inline-block;
+ transition:0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+ font-size: 1.2em;
+ color:white;
+ margin: 0 10px;
+ display: inline-block;
+ text-decoration:none;
+}
